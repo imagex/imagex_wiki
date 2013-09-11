@@ -54,8 +54,8 @@ function imagex_wiki_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wiki-field_wiki_groups'
-  $field_instances['node-wiki-field_wiki_groups'] = array(
+  // Exported field_instance: 'node-wiki-field_tags'
+  $field_instances['node-wiki-field_tags'] = array(
     'bundle' => 'wiki',
     'default_value' => NULL,
     'deleted' => 0,
@@ -63,12 +63,10 @@ function imagex_wiki_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 3,
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -78,72 +76,21 @@ function imagex_wiki_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_wiki_groups',
-    'label' => 'Groups',
+    'field_name' => 'field_tags',
+    'label' => 'Tags',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'og',
-      'settings' => array(),
-      'type' => 'og_complex',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'node-wiki-field_wiki_radioactivity'
-  $field_instances['node-wiki-field_wiki_radioactivity'] = array(
-    'bundle' => 'wiki',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_wiki_radioactivity',
-    'label' => 'Radioactivity',
-    'required' => 0,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'plain_text' => 'plain_text',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'module' => 'taxonomy',
       'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'text_textfield',
-      'weight' => 1,
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 7,
     ),
   );
 
@@ -190,8 +137,7 @@ function imagex_wiki_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Groups');
-  t('Radioactivity');
+  t('Tags');
   t('Topics');
 
   return $field_instances;
