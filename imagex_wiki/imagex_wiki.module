@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the ImageX Wiki feature.
- */
-
-include_once 'imagex_wiki.features.inc';
