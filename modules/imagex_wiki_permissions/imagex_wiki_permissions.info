@@ -1,4 +1,5 @@
 name = Wiki Permissions
+description =  This extension module of the Wiki component provides default permissions for ImageX’s [User Roles](http://github.com/imagex/imagex_user_roles). These permissions meet the  requirements to be used in conjunction with the ImageX [Workflow](http://github.com/imagex/imagex_workflow).
 core = 7.x
 package = ImageX
 version = 7.x-1.0
