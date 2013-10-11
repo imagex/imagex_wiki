@@ -7,5 +7,6 @@ project = imagex_wiki_addthis
 dependencies[] = addthis
 dependencies[] = features
 dependencies[] = imagex_addthis
+dependencies[] = imagex_wiki
 features[features_api][] = api:1
 features[field_instance][] = node-wiki-field_addthis

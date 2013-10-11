@@ -1,0 +1,14 @@
+name = Wiki Permissions
+core = 7.x
+package = ImageX
+version = 7.x-1.0
+project = imagex_wiki_permissions
+dependencies[] = features
+dependencies[] = node
+dependencies[] = imagex_wiki
+features[features_api][] = api:2
+features[user_permission][] = create wiki content
+features[user_permission][] = delete any wiki content
+features[user_permission][] = delete own wiki content
+features[user_permission][] = edit any wiki content
+features[user_permission][] = edit own wiki content
