@@ -20,13 +20,6 @@ function imagex_wiki_workflow_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'scheduler_publish_moderation_state_imagex_news';
-  $strongarm->value = 'published';
-  $export['scheduler_publish_moderation_state_imagex_news'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'scheduler_publish_moderation_state_wiki';
   $strongarm->value = 'needs_review';
   $export['scheduler_publish_moderation_state_wiki'] = $strongarm;
