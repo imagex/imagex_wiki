@@ -79,6 +79,9 @@ function imagex_wiki_strongarm() {
         'redirect' => array(
           'weight' => '6',
         ),
+        'workbench_access' => array(
+          'weight' => '0',
+        ),
       ),
       'display' => array(),
     ),
