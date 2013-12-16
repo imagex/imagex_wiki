@@ -1,6 +1,6 @@
 name = Wiki Workflow
 core = 7.x
-description = This extension module integrates with the ImageX [Workflow](http://github.com/imagex/imagex_workflow) component to provide a default publishing and scheduling workflow for Blog content.
+description = This extension module integrates with the ImageX Workflow component to provide a default publishing and scheduling workflow for Wiki content.
 package = ImageX
 version = 7.x-1.0
 project = imagex_wiki_workflow
