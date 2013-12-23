@@ -24,7 +24,6 @@ This component enables content management of the standard Wiki content and its l
 
 ### Extension Modules
 
-* **imagex_wiki_addthis*: This extension module of the Wiki component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for Wiki content. 
 * **imagex_wiki_permissions*: This extension module of the Page component provides default permissions for ImageX’s [User Roles](http://github.com/imagex/imagex_user_roles). These permissions meet the  requirements to be used in conjunction with the ImageX [Workflow](http://github.com/imagex/imagex_workflow).
 * **imagex_Wiki_workflow: This extension module integrates with the ImageX [Workflow](http://github.com/imagex/imagex_workflow) component to provide a default publishing and scheduling workflow for Wiki content.
 
