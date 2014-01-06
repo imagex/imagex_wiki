@@ -24,7 +24,7 @@ function imagex_wiki_node_info() {
     'wiki' => array(
       'name' => t('Wiki'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Use <em>wikis</em> to create collaborative pages between users.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
