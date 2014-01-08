@@ -1,5 +1,5 @@
 name = Wiki
-description = This component enables content management of the standard Wiki content and its layout. The default layout is configurable using panelizer. 
+description = This component enables content management of the standard Wiki content and its layout.
 core = 7.x
 package = ImageX
 version = 7.x-1.0
@@ -36,6 +36,7 @@ features[variable][] = menu_parent_wiki
 features[variable][] = node_options_wiki
 features[variable][] = node_preview_wiki
 features[variable][] = node_submitted_wiki
+features[variable][] = panelizer_defaults_node_wiki
 features_exclude[field_base][field_wiki_radioactivity] = field_wiki_radioactivity
 features_exclude[field_base][field_wiki_groups] = field_wiki_groups
 features_exclude[field_base][field_wiki_topics] = field_wiki_topics
